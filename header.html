@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="wrapper">
+        <header class="nav-bar">
+          <img class="logo-icon" alt="" src="./public/logo.svg" />
+
+          <nav class="menu">
+            <a class="link4" id="link">Home</a>
+            <a class="link4" id="link1">All projects</a>
+            <a class="link4" id="link2">About</a>
+          </nav>
+          <button class="hamburger-menu" id="hamburgerMenu">
+            <div class="hamburger-menu-child"></div>
+            <div class="hamburger-menu-child"></div>
+            <div class="hamburger-menu-child"></div>
+          </button>
+          <button class="button" id="button">
+            <b class="link7">Lets Chat</b>
+          </button>
+        </header>
+      </div>
+    </div>
+
+    <div id="hamburgerDrawer" class="popup-overlay" style="display: none">
+      <div class="hamburger-drawer" data-animate-on-scroll>
+        <button class="close-icon" id="drawercloseIcon">
+          <div class="cose-icon">
+            <div class="cose-icon-child"></div>
+            <div class="cose-icon-item"></div>
+          </div>
+        </button>
+        <div class="row" id="drawerrowContainer">
+          <a class="link" id="drawerlink">Home</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+        <div class="hamburger-drawer-child"></div>
+        <div class="row" id="drawerrowContainer1">
+          <a class="link1">All projects</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+        <div class="hamburger-drawer-child"></div>
+        <div class="row" id="drawerrowContainer2">
+          <a class="link1">About</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+        <div class="hamburger-drawer-child"></div>
+        <div class="row" id="drawerrowContainer3">
+          <a class="link1">Let’s Chat</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var drawercloseIcon = document.getElementById("drawercloseIcon");
+      if (drawercloseIcon) {
+        drawercloseIcon.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawerlink = document.getElementById("drawerlink");
+      if (drawerlink) {
+        drawerlink.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var drawerrowContainer = document.getElementById("drawerrowContainer");
+      if (drawerrowContainer) {
+        drawerrowContainer.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var drawerrowContainer1 = document.getElementById("drawerrowContainer1");
+      if (drawerrowContainer1) {
+        drawerrowContainer1.addEventListener("click", function (e) {
+          window.location.href = "./all-projects.html";
+        });
+      }
+      
+      var drawerrowContainer2 = document.getElementById("drawerrowContainer2");
+      if (drawerrowContainer2) {
+        drawerrowContainer2.addEventListener("click", function (e) {
+          window.location.href = "./about.html";
+        });
+      }
+      
+      var drawerrowContainer3 = document.getElementById("drawerrowContainer3");
+      if (drawerrowContainer3) {
+        drawerrowContainer3.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      
+      var link = document.getElementById("link");
+      if (link) {
+        link.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var link1 = document.getElementById("link1");
+      if (link1) {
+        link1.addEventListener("click", function (e) {
+          window.location.href = "./all-projects.html";
+        });
+      }
+      
+      var link2 = document.getElementById("link2");
+      if (link2) {
+        link2.addEventListener("click", function (e) {
+          window.location.href = "./about.html";
+        });
+      }
+      
+      var hamburgerMenu = document.getElementById("hamburgerMenu");
+      if (hamburgerMenu) {
+        hamburgerMenu.addEventListener("click", function () {
+          var drawerOverlay = document.getElementById("hamburgerDrawer");
+          if (!drawerOverlay) return;
+          var drawerOverlayStyle = drawerOverlay.style;
+          if (drawerOverlayStyle) {
+            drawerOverlayStyle.display = "flex";
+            drawerOverlayStyle.zIndex = 99;
+            drawerOverlayStyle.backgroundColor = "#000";
+            drawerOverlayStyle.alignItems = "center";
+            drawerOverlayStyle.justifyContent = "";
+          }
+          drawerOverlay.setAttribute("closable", "");
+      
+          var onClick =
+            drawerOverlay.onClick ||
+            function (e) {
+              if (
+                e.target === drawerOverlay &&
+                drawerOverlay.hasAttribute("closable")
+              ) {
+                drawerOverlayStyle.display = "none";
+              }
+            };
+          drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+      
+      var button = document.getElementById("button");
+      if (button) {
+        button.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      </script>
+  </body>
+</html>

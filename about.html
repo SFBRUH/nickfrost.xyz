@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- jquery stylesheet CDN -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_button.css" />
+
+    <!-- stylesheet -->
+
+    <link rel="stylesheet" href="./css/global.css" />
+
+
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+
+    <!-- header content-->
+
+
+    <div class="header">
+      <div class="wrapper">
+        <header class="nav-bar">
+          <img class="logo-icon" alt="" src="./public/logo.svg" />
+
+          <nav class="menu">
+            <a class="link4" id="link" href="index.html">Home</a>
+            <a class="link4" id="link1" href="all-projects.html" >All projects</a>
+            <a class="link4" id="link2" href="about.html">About</a>
+          </nav>
+          <button class="hamburger-menu" id="hamburgerMenu">
+            <div class="hamburger-menu-child"></div>
+            <div class="hamburger-menu-child"></div>
+            <div class="hamburger-menu-child"></div>
+          </button>
+          <button class="button" id="button">
+            <a href="contact.html"><b class="link7">Lets Chat</b></a>
+          </button>
+        </header>
+      </div>
+    </div>
+
+    <div id="hamburgerDrawer" class="popup-overlay" style="display: none">
+      <div class="hamburger-drawer" data-animate-on-scroll>
+        <button class="close-icon" id="drawercloseIcon">
+          <div class="cose-icon">
+            <div class="cose-icon-child"></div>
+            <div class="cose-icon-item"></div>
+          </div>
+        </button>
+        <div class="row" id="drawerrowContainer">
+          <a class="link" id="drawerlink">Home</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+        <div class="hamburger-drawer-child"></div>
+        <div class="row" id="drawerrowContainer1">
+          <a class="link1">All projects</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+        <div class="hamburger-drawer-child"></div>
+        <div class="row" id="drawerrowContainer2">
+          <a class="link1">About</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+        <div class="hamburger-drawer-child"></div>
+        <div class="row" id="drawerrowContainer3">
+          <a class="link1">Let’s Chat</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- page content -->
+
+
+    <div class="about">
+      <div class="wrapper3">
+        <div class="spacer2"></div>
+        <div class="header-section1">
+          <b class="heading-12">About Nick</b>
+          <div class="body-text3">Some of my best work for 2023</div>
+        </div>
+        <div class="about-section1">
+          <div class="icon-backstory-parent">
+            <img
+              class="icon-backstory"
+              alt=""
+              loading="eager"
+              src="./public/icon--backstory.svg"
+            />
+
+            <h2 class="header-22">My story</h2>
+            <p class="body-text4">
+              I am Nick Frost, a 3D concept artist based in Cape Town, South
+              Africa. At the young age of 17, I began my journey in the field of
+              3D artwork and have since gained extensive experience through 6
+              years of dedicated work. My passion for this field remains
+              unwavering, and I am pleased to have contributed to several
+              projects during my experience as a 3D concept artist.
+            </p>
+          </div>
+          <div class="icon-qualifications-parent">
+            <img
+              class="icon-qualifications"
+              alt=""
+              loading="eager"
+              src="./public/icon--qualifications.svg"
+            />
+
+            <h2 class="header-22">Qualifications</h2>
+            <p class="body-text4">
+              BA in digital design at Vega school cape town, where I learnt how
+              to become a multimedia designer.
+            </p>
+          </div>
+        </div>
+        <div class="spacer3"></div>
+      </div>
+    </div>
+
+
+    <!-- footer conent-->
+
+    <div class="footer">
+      <div class="wrapper8">
+        <footer class="footer1">
+          <img
+            class="logo-full-icon"
+            alt=""
+            loading="lazy"
+            src="./public/logo-full.svg"
+          />
+
+          <div class="menu-parent">
+            <nav class="menu1">
+              <a class="home" id="home">Home</a>
+              <a class="home" id="allProjects">All projects</a>
+              <a class="home" id="about">About</a>
+              <a class="home" id="contact">Contact</a>
+            </nav>
+            <div class="social-media-icons">
+              <img
+                class="linkedin-icon"
+                alt=""
+                loading="lazy"
+                src="./public/linkedin.svg"
+              />
+
+              <img
+                class="linkedin-icon"
+                alt=""
+                loading="lazy"
+                src="./public/behance.svg"
+              />
+
+              <img
+                class="linkedin-icon"
+                alt=""
+                loading="lazy"
+                src="./public/facebook.svg"
+              />
+
+              <img
+                class="twitter-icon"
+                alt=""
+                loading="lazy"
+                src="./public/Twitter@2x.png"
+              />
+            </div>
+          </div>
+          <div class="footer-child"></div>
+          <div class="body-text33">All rights reserved Nick Frost</div>
+        </footer>
+      </div>
+    </div>
+
+
+    <!-- header hamburger drop down menu script -->
+
+    <script src="javascript/javascript.js"></script>
+
+    <!-- Jquery plugin script -->
+
+    <script src="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_animation.js"></script>
+
+  </body>
+</html>

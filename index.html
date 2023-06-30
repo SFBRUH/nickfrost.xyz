@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- jquery stylesheet CDN -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_button.css" />
+
+    <!-- stylesheet -->
+
+    <link rel="stylesheet" href="./css/global.css" />
+
+
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+
+    <!-- header content-->
+
+
+    <div class="header">
+      <div class="wrapper">
+        <header class="nav-bar">
+          <img class="logo-icon" alt="" src="./public/logo.svg" />
+
+          <nav class="menu">
+            <a class="link4" id="link" href="index.html">Home</a>
+            <a class="link4" id="link1" href="all-projects.html" >All projects</a>
+            <a class="link4" id="link2" href="about.html">About</a>
+          </nav>
+          <button class="hamburger-menu" id="hamburgerMenu">
+            <div class="hamburger-menu-child"></div>
+            <div class="hamburger-menu-child"></div>
+            <div class="hamburger-menu-child"></div>
+          </button>
+          <button class="button" id="button">
+            <a href="contact.html"><b class="link7">Lets Chat</b></a>
+          </button>
+        </header>
+      </div>
+    </div>
+
+    <div id="hamburgerDrawer" class="popup-overlay" style="display: none">
+      <div class="hamburger-drawer" data-animate-on-scroll>
+        <button class="close-icon" id="drawercloseIcon">
+          <div class="cose-icon">
+            <div class="cose-icon-child"></div>
+            <div class="cose-icon-item"></div>
+          </div>
+        </button>
+        <div class="row" id="drawerrowContainer">
+          <a class="link" id="drawerlink">Home</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+        <div class="hamburger-drawer-child"></div>
+        <div class="row" id="drawerrowContainer1">
+          <a class="link1">All projects</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+        <div class="hamburger-drawer-child"></div>
+        <div class="row" id="drawerrowContainer2">
+          <a class="link1">About</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+        <div class="hamburger-drawer-child"></div>
+        <div class="row" id="drawerrowContainer3">
+          <a class="link1">Let’s Chat</a>
+          <img class="row-child" alt="" src="./public/arrow-1.svg" />
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- page content -->
+
+
+    <div class="index1">
+      <div class="wrapper9">
+        <div class="spacer12"></div>
+        <section class="hero-section"> 
+          <b class="title">3D concept artist</b>
+          <div class="body-text34">
+            <p class="i-rapidly-create">
+              I rapidly create 3D models from your 2D concepts for animations,
+              videos, games and more.
+            </p>
+          </div>
+          <a href="https://youtu.be/2P_HPcXoOzc"> 
+            <button class="button-large1" >
+              <div class="link9">Watch showreel</div>
+              <img
+              class="button-large-child"
+              alt=""
+              src="./public/polygon-9.svg"/>
+            </button>
+        </a>
+        </section>
+        <section class="feature-section">
+          <div class="feature-card">
+            <img
+              class="icon-asset-creation"
+              alt=""
+              loading="lazy"
+              src="./public/icon--asset-creation.svg"
+            />
+
+            <h2 class="header-210">Custom 3D Assets</h2>
+            <p class="body-text35">
+              I can create fully fledged custom 3D assets from scratch using
+              Blender.
+            </p>
+            <li class="list-item">3D modeling</li>
+            <li class="list-item">Texturing</li>
+            <li class="list-item">Sculpting</li>
+          </div>
+          <div class="feature-card">
+            <img
+              class="icon-compositing"
+              alt=""
+              loading="lazy"
+              src="./public/icon--compositing.svg"
+            />
+
+            <h2 class="header-210">Animation & rigging</h2>
+            <p class="body-text35">
+              I can compose and animate environments, items and characters.
+            </p>
+            <li class="list-item">Rigging</li>
+            <li class="list-item">Scene setup</li>
+            <li class="list-item">Mocap cleanup</li>
+          </div>
+          <div class="feature-card">
+            <img
+              class="icon-compositing"
+              alt=""
+              loading="lazy"
+              src="./public/icon--render.svg"
+            />
+
+            <h2 class="header-210">Render & edit</h2>
+            <p class="body-text35">
+              I can render still images and video format, as-well as video edit.
+            </p>
+            <li class="list-item">Video (up to 4k)</li>
+            <li class="list-item">Still images (up to 8k)</li>
+            <li class="list-item">Post video/image editing</li>
+          </div>
+        </section>
+        <div class="header-section9">
+          <b class="heading-3">Project highlights</b>
+          <div class="body-text38">Some of my best work for 2023</div>
+        </div>
+        <div class="project-card11">
+          <div class="body-text39">
+            Product design
+          </div>
+          <b class="heading-3">Ason bag showcase</b>
+          
+
+          <!-- J QUERY BUTTON -->
+            
+          <a href="asonbag-project.html" class="btn">
+            <i class="material-icons">
+              
+              <svg width="19" height="60" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM12.7071 8.20711C13.0976 7.81658 13.0976 7.18342 12.7071 6.79289L6.34315 0.428932C5.95262 0.0384078 5.31946 0.0384078 4.92893 0.428932C4.53841 0.819457 4.53841 1.45262 4.92893 1.84315L10.5858 7.5L4.92893 13.1569C4.53841 13.5474 4.53841 14.1805 4.92893 14.5711C5.31946 14.9616 5.95262 14.9616 6.34315 14.5711L12.7071 8.20711ZM1 8.5H12V6.5H1V8.5Z" fill="white"/>
+              </svg>
+          
+              </i>
+          </a>
+        </div>
+        <div class="project-section6">
+          <div class="project-card12">
+            <div class="body-text39">
+              Character design
+            </div>
+            <b class="heading-3">Evil Cyborg robot</b>
+            
+            
+            <!-- J QUERY BUTTON -->
+            
+            <a href="robot-project.html" class="btn">
+              <i class="material-icons">
+                
+                <svg width="19" height="60" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM12.7071 8.20711C13.0976 7.81658 13.0976 7.18342 12.7071 6.79289L6.34315 0.428932C5.95262 0.0384078 5.31946 0.0384078 4.92893 0.428932C4.53841 0.819457 4.53841 1.45262 4.92893 1.84315L10.5858 7.5L4.92893 13.1569C4.53841 13.5474 4.53841 14.1805 4.92893 14.5711C5.31946 14.9616 5.95262 14.9616 6.34315 14.5711L12.7071 8.20711ZM1 8.5H12V6.5H1V8.5Z" fill="white"/>
+                </svg>
+            
+                </i>
+            </a>
+          </div>
+
+          <div class="project-card13">
+            <div class="body-text39">
+              Evironment design
+            </div>
+            <b class="heading-3">The space invasion</b>
+            
+
+            <!-- J QUERY BUTTON -->
+            
+            <a href="sci-fi-environment-project.html" class="btn">
+              <i class="material-icons">
+                
+                <svg width="19" height="60" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM12.7071 8.20711C13.0976 7.81658 13.0976 7.18342 12.7071 6.79289L6.34315 0.428932C5.95262 0.0384078 5.31946 0.0384078 4.92893 0.428932C4.53841 0.819457 4.53841 1.45262 4.92893 1.84315L10.5858 7.5L4.92893 13.1569C4.53841 13.5474 4.53841 14.1805 4.92893 14.5711C5.31946 14.9616 5.95262 14.9616 6.34315 14.5711L12.7071 8.20711ZM1 8.5H12V6.5H1V8.5Z" fill="white"/>
+                </svg>
+            
+                </i>
+            </a>
+          </div>
+        </div>
+        <button class="button-full">
+          <div class="view-project">View project</div>
+          <img class="arrow-icon1" alt="" src="./public/arrow-icon.svg" />
+        </button>
+        <div class="header-section9">
+          <b class="heading-3">My Toolset</b>
+          <div class="body-text38">Some of the tools I use</div>
+        </div>
+        <div class="toolset-section">
+          <div class="icon-pair">
+            <img
+              class="icon-pair-child"
+              alt=""
+              loading="lazy"
+              src="./public/group-233.svg"
+            />
+
+            <div class="body">Blender</div>
+          </div>
+          <div class="icon-pair">
+            <img
+              class="vector-icon"
+              alt=""
+              loading="lazy"
+              src="./public/vector.svg"
+            />
+
+            <div class="body">Creative suite</div>
+          </div>
+          <div class="icon-pair">
+            <img
+              class="icon-pair-item"
+              alt=""
+              loading="lazy"
+              src="./public/group-228.svg"
+            />
+
+            <div class="body">Substance painter</div>
+          </div>
+          <div class="icon-pair">
+            <img
+              class="icon-compositing"
+              alt=""
+              loading="lazy"
+              src="./public/group-232.svg"
+            />
+
+            <div class="body">Davanci resolve</div>
+          </div>
+          <div class="icon-pair">
+            <img
+              class="group-icon"
+              alt=""
+              loading="lazy"
+              src="./public/group-229.svg"
+            />
+
+            <div class="body">Z brush</div>
+          </div>
+        </div>
+        <div class="header-section9">
+          <b class="heading-3">Clients</b>
+          <div class="body-text38">You are in good company</div>
+        </div>
+        <div class="toolset-section1">
+          <img
+            class="toolset-section-child"
+            alt=""
+            src="./public/group-234.svg"
+          />
+
+          <div class="icon-pair5">
+            <div class="icon1"></div>
+          </div>
+          <div class="icon-pair5">
+            <div class="icon1"></div>
+          </div>
+          <div class="icon-pair5">
+            <div class="icon1"></div>
+          </div>
+          <div class="icon-pair5">
+            <div class="icon1"></div>
+          </div>
+        </div>
+        <div class="spacer13"></div>
+      </div>
+    </div>
+
+
+
+    <!-- footer conent-->
+
+    <div class="footer">
+      <div class="wrapper8">
+        <footer class="footer1">
+          <img
+            class="logo-full-icon"
+            alt=""
+            loading="lazy"
+            src="./public/logo-full.svg"
+          />
+
+          <div class="menu-parent">
+            <nav class="menu1">
+              <a class="home" id="home" href="index.html">Home</a>
+              <a class="home" id="allProjects" href="all-projects.html">All projects</a>
+              <a class="home" id="about" href="about.html">About</a>
+              <a class="home" id="contact" href="contact.html">Contact</a>
+            </nav>
+            <div class="social-media-icons">
+              <img
+                class="linkedin-icon"
+                alt=""
+                loading="lazy"
+                src="./public/linkedin.svg"
+              />
+
+              <img
+                class="linkedin-icon"
+                alt=""
+                loading="lazy"
+                src="./public/behance.svg"
+              />
+
+              <img
+                class="linkedin-icon"
+                alt=""
+                loading="lazy"
+                src="./public/facebook.svg"
+              />
+
+              <img
+                class="twitter-icon"
+                alt=""
+                loading="lazy"
+                src="./public/Twitter@2x.png"
+              />
+            </div>
+          </div>
+          <div class="footer-child"></div>
+          <div class="body-text33">All rights reserved Nick Frost</div>
+        </footer>
+      </div>
+    </div>
+
+
+    <!-- header hamburger drop down menu script -->
+
+    <script src="javascript/javascript.js"></script>
+
+    <!-- Jquery plugin script -->
+
+    <script src="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_animation.js"></script>
+
+  </body>
+</html>

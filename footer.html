@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="footer">
+      <div class="wrapper8">
+        <footer class="footer1">
+          <img
+            class="logo-full-icon"
+            alt=""
+            loading="lazy"
+            src="./public/logo-full.svg"
+          />
+
+          <div class="menu-parent">
+            <nav class="menu1">
+              <a class="home" id="home">Home</a>
+              <a class="home" id="allProjects">All projects</a>
+              <a class="home" id="about">About</a>
+              <a class="home" id="contact">Contact</a>
+            </nav>
+            <div class="social-media-icons">
+              <img
+                class="linkedin-icon"
+                alt=""
+                loading="lazy"
+                src="./public/linkedin.svg"
+              />
+
+              <img
+                class="linkedin-icon"
+                alt=""
+                loading="lazy"
+                src="./public/behance.svg"
+              />
+
+              <img
+                class="linkedin-icon"
+                alt=""
+                loading="lazy"
+                src="./public/facebook.svg"
+              />
+
+              <img
+                class="twitter-icon"
+                alt=""
+                loading="lazy"
+                src="./public/Twitter@2x.png"
+              />
+            </div>
+          </div>
+          <div class="footer-child"></div>
+          <div class="body-text33">All rights reserved Nick Frost</div>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var allProjects = document.getElementById("allProjects");
+      if (allProjects) {
+        allProjects.addEventListener("click", function (e) {
+          window.location.href = "./all-projects.html";
+        });
+      }
+      
+      var about = document.getElementById("about");
+      if (about) {
+        about.addEventListener("click", function (e) {
+          window.location.href = "./about.html";
+        });
+      }
+      
+      var contact = document.getElementById("contact");
+      if (contact) {
+        contact.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      </script>
+  </body>
+</html>
