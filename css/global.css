@@ -692,7 +692,7 @@ body {
   flex-direction: column;
   padding: var(--padding-181xl) var(--padding-6xl);
   gap: var(--gap-6xl);
-  background-image: url(../public/hero-section@3x.png);
+  background-image: url(../public/hero\ Section.webp);
   
   background-size: cover;
   background-repeat: no-repeat;
