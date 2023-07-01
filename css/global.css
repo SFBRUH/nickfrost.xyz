@@ -731,6 +731,13 @@ body {
 .list-item {
   font-weight: 300;
 }
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
 .feature-card {
   border-radius: var(--br-mini);
   background-color: var(--color-gray-300);
