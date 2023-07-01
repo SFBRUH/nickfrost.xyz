@@ -642,6 +642,7 @@ body {
 }
 .title {
   position: relative;
+  font-size: 70px;
   line-height: 70px;
 }
 .i-rapidly-create {
