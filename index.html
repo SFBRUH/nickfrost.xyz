@@ -14,9 +14,10 @@
 
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <!-- jquery stylesheet CDN -->
+    <!-- DEFER jquery stylesheet CDN -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_button.css" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_button.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_button.css"></noscript> 
 
     <!-- stylesheet -->
 
@@ -374,11 +375,11 @@
 
     <!-- header hamburger drop down menu script -->
 
-    <script src="javascript/javascript.js"></script>
+    <script defer src="javascript/javascript.js"></script>
 
     <!-- Jquery plugin script -->
 
-    <script src="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_animation.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_animation.js"></script>
 
   </body>
 </html>
