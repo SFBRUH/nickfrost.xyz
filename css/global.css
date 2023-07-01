@@ -804,12 +804,12 @@ body {
   border-radius: var(--br-xl);
   overflow: hidden;
   display: flex;
-  background-image: url(../public/project-card4@3x.png);
+  background-image: url(../public/asonbagpreview.webp);
   font-size: var(--font-size-6xl);
 }
 .project-card12 {
   width: 587.5px;
-  background-image: url(../public/project-card15@3x.png);
+  background-image: url(../public/robotpreview.webp);
 }
 .project-card12,
 .project-card13,
@@ -828,7 +828,7 @@ body {
   align-items: flex-start;
   justify-content: flex-end;
   gap: var(--gap-xl);
-  background-image: url(../public/project-card16@3x.png);
+  background-image: url(../public/spacepreview.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
