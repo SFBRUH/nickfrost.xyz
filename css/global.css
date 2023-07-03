@@ -148,6 +148,17 @@ body {
   text-align: center;
 }
 
+.link7:hover {
+  position: absolute;
+  top: 11px;
+  left: 28px;
+  font-size: var(--font-size-base);
+  line-height: 155.52%;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+}
+
 
 .button {
   cursor: pointer;
