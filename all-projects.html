@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- SEO title - description - Favicon-->
+    
+    <title> All projects </title>
+
+    <link rel="icon" type="image/x-icon" href="/public/NF-FAVICON.ico">
+
+    <meta name="description" content=" View all my 3D projects">
+
     <meta charset="utf-8" />
+
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <!-- jquery stylesheet CDN -->
+    <!-- DEFER jquery stylesheet CDN -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_button.css" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_button.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SFBRUH/arrow-button@main/arrow_button.css"></noscript> 
 
     <!-- stylesheet -->
 
     <link rel="stylesheet" href="./css/global.css" />
 
+    <!-- DEFER google font link -->
 
-    
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+  
   </head>
   <body>
 
