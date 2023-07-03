@@ -92,6 +92,20 @@ body {
   color: inherit;
   cursor: pointer;
 }
+
+.link4:hover {
+  text-decoration: underline;
+  position: relative;
+  line-height: 155.52%;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+}
+
 .menu {
   margin: 0;
   display: flex;
